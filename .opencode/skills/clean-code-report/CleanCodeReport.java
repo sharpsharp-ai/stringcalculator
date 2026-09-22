@@ -25,7 +25,7 @@ import java.util.stream.Stream;
  * Clean-Code-Report: liest src/main/java und src/test/java, sucht die klassischen Smells und schreibt
  * einen Bericht nach target/clean-code-report.html. Kein Gate, keine Abhängigkeiten, JDK 17 reicht.
  *
- * Aufruf im Projektordner:  java tools/CleanCodeReport.java
+ * Aufruf im Projektordner:  java .opencode/skills/clean-code-report/CleanCodeReport.java
  */
 public class CleanCodeReport {
 
