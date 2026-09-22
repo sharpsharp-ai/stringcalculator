@@ -21,17 +21,20 @@ und lädt die Bibliotheken. Rechtsklick auf `src/test/java` → Run 'All Tests'.
 
 ## Clean-Code-Report
 
-Ein Blick auf den eigenen Code, ohne Gnade und ohne Gate: Der Bericht sucht die klassischen Smells
-(lange Methoden, tiefe Verschachtelung, magische Zahlen, doppelter Code, kryptische Namen, toter Code,
-Tests ohne Namen) und macht daraus Punkte, einen Rang und eine Monster-Galerie.
+Ein Blick auf den Code, ohne Gnade und ohne Gate: Der Bericht sucht die klassischen Smells (lange Methoden,
+tiefe Verschachtelung, magische Zahlen, doppelter Code, kryptische Namen, toter Code, Tests ohne Namen)
+und macht daraus Punkte, einen Rang und eine Monster-Galerie. Links die Funde, rechts der Code wie in der IDE,
+ein Klick springt zur Zeile.
 
 ```bash
-java tools/CleanCodeReport.java        # schreibt target/clean-code-report.html
+java .opencode/skills/clean-code-report/CleanCodeReport.java   # schreibt target/clean-code-report.html
 ```
 
+In opencode: `/clean-code-report` erzeugt den Bericht und nennt die drei teuersten Funde samt erstem Schritt.
 Nichts zu installieren, JDK 17 reicht. Jeder Lauf merkt sich den Punktestand in `.clean-code-history`,
-der Bericht zeigt den Verlauf. Wer sehen will, wie das aussieht: Der Branch `beispiel-legacy` enthält eine
-Lösung der Kata, die alle Regeln bricht und trotzdem grün ist.
+der Bericht zeigt den Verlauf. Der Branch `beispiel-legacy` enthält eine Lösung der Kata, die alle Regeln
+bricht und trotzdem grün ist. Der Skill ist ein Ordner: `.opencode/skills/clean-code-report/` plus der
+Command lassen sich in jedes Java-Projekt kopieren.
 
 ## Struktur
 
@@ -41,4 +44,4 @@ Lösung der Kata, die alle Regeln bricht und trotzdem grün ist.
 | `src/test/java/de/sharpsharp/stringcalculator/StringCalculatorTest.java` | die Tests, Start mit einem Kanarienvogel |
 | `StringCalculatorKata.md` | die Aufgabe, Schritt für Schritt |
 | `other-katas/` | Bowling Game, Counting Lines of Code, Poker Hands, Roman Numerals |
-| `tools/CleanCodeReport.java` | der Clean-Code-Report, ein Java-Programm ohne Abhängigkeiten |
+| `.opencode/skills/clean-code-report/` | der Clean-Code-Report als Skill: Java-Programm ohne Abhängigkeiten plus Anleitung |
