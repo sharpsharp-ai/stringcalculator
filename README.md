@@ -21,10 +21,11 @@ und lädt die Bibliotheken. Rechtsklick auf `src/test/java` → Run 'All Tests'.
 
 ## Clean-Code-Report
 
-Ein Blick auf den Code, ohne Gnade und ohne Gate: Der Bericht sucht die klassischen Smells (lange Methoden,
-tiefe Verschachtelung, magische Zahlen, doppelter Code, kryptische Namen, toter Code, Tests ohne Namen)
-und macht daraus Punkte, einen Rang und eine Monster-Galerie. Links die Funde, rechts der Code wie in der IDE,
-ein Klick springt zur Zeile.
+Ein Blick auf den Code, ohne Gnade und ohne Gate: Der Bericht liest den Code mit dem Java-Parser des JDK,
+sucht 30 Code Smells aus sechs Familien (Bloaters, Object-Orientation Abusers, Dispensables, Couplers,
+Readability, Test Smells) und macht daraus Punkte, einen Rang, einen Radar je Familie und eine Monster-Galerie.
+Links die Funde, rechts der Code wie in der IDE, ein Klick springt zur Zeile; das Regelwerk mit jeder Schwelle
+und jedem Refactoring steht im Bericht.
 
 ```bash
 java .opencode/skills/clean-code-report/CleanCodeReport.java   # schreibt target/clean-code-report.html
