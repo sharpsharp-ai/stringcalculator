@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>de.sharpsharp</groupId>
+    <artifactId>katas</artifactId>
+    <version>1.0.0</version>
+  </parent>
+
+  <artifactId>stringcalculator</artifactId>
+  <name>String Calculator Kata</name>
+  <description>TDD von der ersten Zeile an: StringCalculator.add(String)</description>
+</project>
